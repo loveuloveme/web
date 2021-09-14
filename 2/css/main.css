@@ -61,7 +61,7 @@ pre{
     height: 100%;  
     opacity: .4;
     background-color: var(--marvel-red);
-    background-image: url('/2/img/comics-bg.jpg');
+    background-image: url('/img/comics-bg.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
