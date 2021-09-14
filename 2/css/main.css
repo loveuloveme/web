@@ -11,12 +11,17 @@ html{
     font-size: 16px;
 }
 
+h1, h2, h3, h4{
+    font-family: 'stark', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 h2{
     font-size: 4rem;
 }
 
 section{
     min-height: 100vh;
+    overflow: hidden;
 }
 
 header{
@@ -29,17 +34,42 @@ header > nav ul li{
     font-size: 1rem;
 }
 
+pre{
+    color: #fff;
+}
+
 .start{
     padding: 0 40px 0 40px;
 }
 
 .intro{
     background-color: var(--marvel-red);
+    position: relative;
+    z-index: 1;
+
+    height: 564px;
+}
+
+
+.intro::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4;
+    background-color: var(--marvel-red);
+    background-image: url('/2/img/comics-bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
 .intro__name{
     color: #fff;
     font-size: 14rem;
+    font-family: 'stark', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .intro blockquote{
