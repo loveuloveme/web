@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --marvel-red: #ED1D24;
+}
+
+html{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+section{
+    min-height: 100vh;
+}
+
+header{
+    
+}
+
+header > nav ul li{
+    display: inline-block;
+
+    font-size: 1rem;
+}
+
+.start{
+    padding: 0 40px 0 40px;
+}
+
+.intro{
+    background-color: var(--marvel-red);
+}
+
+.intro__name{
+    color: #fff;
+    font-size: 14rem;
+}
+
+.intro blockquote{
+    color: #fff;
+}
+
+.intro h1{
+    color: var(--marvel-red);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.note{
+    
+}
+
+.note p{
+    width: 300px;
+}
+
+.about-right__up img{
+    width: 340px;
+    height: 500px;
+
+    object-fit: cover;
+}
+
+
+.about-spec{
+    display: inline-block;
+}
+
+.about-spec li h3{
+    color: var(--marvel-red);
+    text-transform: uppercase;
+}
+
+.about-spec li > *{
+    text-align: right;
+}
