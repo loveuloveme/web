@@ -1,0 +1,20 @@
+footer{
+    padding: 0 40px;
+    height: 100px;
+    background: #151515;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer span{
+    font-family: 'marvel';
+    color: #fff;
+    font-size: 3rem;
+    display: inline-block;
+    height: 42px;
+    padding: 0 3px;
+    background-color: var(--marvel-red);
+}
