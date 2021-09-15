@@ -112,7 +112,7 @@ main{
     height: 100%;  
     opacity: .27;
     background-color: var(--marvel-red);
-    background-image: url('/img/comics-bg.jpg');
+    background-image: url('../../img/comics-bg.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -225,7 +225,7 @@ h1{
 }
 
 .about__left{
-    background-image: url('../img/man-side.png');
+    background-image: url('../../img/man-side.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left bottom;

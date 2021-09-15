@@ -234,7 +234,7 @@ h1{
 }
 
 .about__left{
-    background-image: url('../img/man-side.png');
+    background-image: url('../../img/man-side.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left bottom;
