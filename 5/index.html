@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <div class="table-setting">
+                <div>
+                    <h3>Неделя</h3>
+                    <select name="week">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Язык</h3>
+                    <select name="lang">
+                        <option value="eng">eng</option>
+                        <option value="ru">ru</option>
+                    </select>
+                </div>
+
+                <button type="reset">очистить</button>
+            </div>
+            <div class="table-action">
+                <h3>Занятие</h3>
+                <textarea rows="10" cols="45" name="text"></textarea>
+                <input type="submit" value="добавить" disabled>
+            </div>
+        </form>
+    </div>
+    <div class="list">
+        <div class="list-item">
+            <div class="list-item__action">lorem ipsum dolor sit</div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
