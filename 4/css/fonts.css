@@ -2,5 +2,10 @@
 
 @font-face {
     font-family: 'stark';
-    src: url('../fonts/stark.ttf') format('truetype');
-}  
+    src: url('../../fonts/stark.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'marvel';
+    src: url('../../fonts/marvel.ttf') format('truetype');
+}
