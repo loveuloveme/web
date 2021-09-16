@@ -215,6 +215,10 @@
         padding-top: 10px;
     }
 
+    .armor{
+        padding: 0 !important;
+    }
+
     .table{
         width: 100%;
     }

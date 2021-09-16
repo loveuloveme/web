@@ -3,6 +3,11 @@
     padding: 201px 40px 0 40px;
 
     justify-content: center;
+
+    /* background: url(https://www.hollywoodreporter.com/wp-content/uploads/2013/05/bmk1750_v118.1082.jpg?w=1024); */
+    background: #F3EEEA;
+    background-position: center;
+    background-size: cover;
 }
 
 .start blockquote{
@@ -19,7 +24,9 @@ main{
     position: relative;
     z-index: 1;
 
-    height: 564px;
+    
+    height: 477px;
+
     
     display: flex;
     justify-content: center;
@@ -38,7 +45,8 @@ main{
     background-color: var(--marvel-red);
     background-image: url('../../../img/comics-bg.jpg');
     background-size: cover;
-    background-blend-mode: darken;
+    background-position: center bottom;
+    background-blend-mode: multiply;
 }
 
 main h1{
@@ -61,6 +69,11 @@ main h1{
     left: 50%;
     bottom: 0;
     height: auto;
+
+    width: 80%;
+    height: calc(100% + 50px);
+    object-fit: contain;
+    object-position: bottom;
 }
 
 .intro__bg{

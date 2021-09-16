@@ -6,7 +6,7 @@
 .table{
     display: grid;
     width: 100%;
-    grid-template-columns: minmax(50px, 300px)1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 100px;
 
     margin-bottom: 20px;
@@ -34,7 +34,6 @@
     font-family: 'stark', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 1.5rem;
-    padding: 10px 7px;
     align-self: center;
     gap: 0;
     height: 100px;
@@ -61,6 +60,4 @@
     height: 100px;
     object-fit: cover;
     object-position: center top;
-    margin-top: -10px;
-    margin-bottom: -10px; 
 }

@@ -130,7 +130,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 
     min-height: 500px;
     z-index: -10;
@@ -156,6 +156,8 @@
     object-fit: contain;
     object-position: bottom;
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 10% 100%, 0% 50%, 4% 0%);
+
+    max-height: 442px;
 }
 
 .about-spec{

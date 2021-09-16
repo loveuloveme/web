@@ -22,3 +22,17 @@ h1{
     text-transform: uppercase;
     font-size: 9rem;
 }
+
+*{
+    /* box-sizing: border-box; */
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display:flex; 
+    flex-direction:column; 
+}
