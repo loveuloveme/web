@@ -26,8 +26,20 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="../img/marvel-black-logo.png" alt="logotype">
+        <img class="header__logo" src="../img/marvel-black-logo.png" alt="logotype">
+        <nav class="header__menu header__menu-inline">
+            <ul>
+                <li>start</li>
+                <li>about</li>
+                <li>suits</li>
+            </ul>
+        </nav>
+        <div class="header__menu-btn">
+            <div class="header__menu-btn__line"></div>
+            <div class="header__menu-btn__line"></div>
+            <div class="header__menu-btn__line"></div>
+        </div>
+        <nav class="header__menu header__menu-block">
             <ul>
                 <li>start</li>
                 <li>about</li>
@@ -180,5 +192,7 @@
     <footer>
         <span>ITMO HEHE</span>
     </footer>
+
+    <script src="./js/header.js"></script>
 </body>
 </html>

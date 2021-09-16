@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
 
-    border: 2px solid var(--marvel-red);
+    /* border: 2px solid var(--marvel-red); */
 
     border-left: none;
     border-right: none;

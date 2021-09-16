@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.armor h2{
+    margin-top: 12px;
+}
+
 .table{
     display: grid;
     width: 100%;
