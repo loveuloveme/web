@@ -1,0 +1,18 @@
+@media (max-width: 768px){
+    body{
+        height: auto;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .setting-params__action .settings-params-item:nth-child(2) > div{
+        flex-direction: column;
+    }
+
+    .settings-submit{
+        margin: 10px 0 0 0 ;
+        height: 40px;
+    }
+}
