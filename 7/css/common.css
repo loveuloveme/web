@@ -1,0 +1,38 @@
+h1, h2, h3, h4{
+    font-family: 'stark', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    font-size: 5.5rem;
+    align-self: flex-start;
+}
+
+ul{
+    list-style-type: none;
+}
+
+section{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: var(--marvel-red);
+    text-transform: uppercase;
+    font-size: 9rem;
+}
+
+*{
+    /* box-sizing: border-box; */
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display:flex; 
+    flex-direction:column; 
+}
