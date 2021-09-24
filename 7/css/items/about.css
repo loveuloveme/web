@@ -7,8 +7,6 @@
     padding-right: 20px;
     
     width: 80%;
-
-    margin-bottom: 36px;
 }
 
 .note h2{
@@ -105,10 +103,29 @@
 
 .about article{
     display: flex;
+
+    padding: 15px 0;
 }
 
 .about article > *{
     flex: 1;
+}
+
+.about article:nth-of-type(2n){
+    flex-direction: row-reverse;
+}
+
+.about article:nth-of-type(2n) .about__right{
+    justify-content: center;
+}
+
+.about article:nth-of-type(2n) .about__right::after{
+    content: none;
+}
+
+.about article:nth-of-type(2n) .about__right img{
+    clip-path: none;
+    object-fit: cover;
 }
 
 .about__left{

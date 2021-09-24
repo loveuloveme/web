@@ -19,6 +19,21 @@ main{
     position: relative;
 }
 
+.intro > video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    object-fit: cover;
+}
+
+.intro > video:nth-child(1){
+    z-index: 9;
+}
+
 .intro{
     background-color: var(--marvel-red);
     position: relative;
@@ -71,9 +86,11 @@ main h1{
     height: auto;
 
     width: 80%;
-    height: calc(100% + 50px);
+    height: 100%;
     object-fit: contain;
     object-position: bottom;
+
+    z-index: 8;
 }
 
 .intro__bg{
@@ -100,8 +117,23 @@ main h1{
     display: contents;
 }
 
+.intro__name span{
+    position: absolute;
+
+    left: 50%;
+}
+
+.intro__name span:nth-child(1){
+    z-index: 7;
+
+    transform: translateX(-100%);
+
+    left: calc(50% - 25px);
+}
+
 .intro__name span:nth-child(2){
-    z-index: 2;
+    z-index: 9;
+    left: calc(50% + 25px);
 }
 
 .intro blockquote{
