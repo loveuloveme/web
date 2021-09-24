@@ -43,7 +43,7 @@ main{
     height: 100%;  
     opacity: .27;
     background-color: var(--marvel-red);
-    background-image: url('../../../img/comics-bg.jpg');
+    background-image: url('../../../img/comics-bg.webp');
     background-size: cover;
     background-position: center bottom;
     background-blend-mode: multiply;
