@@ -45,9 +45,8 @@ window.addEventListener('load', () => {
         })
     });
 
-    elementEnter(document.querySelector(".quote"), () => {});
-
-    elementEnter(document.querySelector(".users"), () => {
+    elementEnter(document.querySelector(".quote"), {}, () => {});
+    elementEnter(document.querySelector(".users"), {}, () => {
         setTimeout(loadUsers, 1500);
     });
 });

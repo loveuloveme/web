@@ -1,7 +1,15 @@
-function elementEnter(element, enterFunction, threshold = 1){
+function elementEnter(element, options, enterFunction, threshold = 1){
     let observer = new IntersectionObserver((entries) => {
         if(entries[0].isIntersecting === true){
-            enterFunction();
+            if(!options.repeat){
+                if(!element.dataset.showed){
+                    element.setAttribute('showed', 1);
+                    enterFunction();
+                }
+            }else{
+                enterFunction();
+            }
+            
         }
     },{
         threshold: threshold

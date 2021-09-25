@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/items/header.css">
+    <link rel="stylesheet" href="css/items/users.css">
     <link rel="stylesheet" href="css/items/start.css">
     <link rel="stylesheet" href="css/items/about.css">
     <link rel="stylesheet" href="css/items/quote.css">
@@ -29,6 +30,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/network.js"></script>
 
+    <script src="./js/common/animations.js"></script>
     <script src="./js/items/start.js"></script>
 
     <title>Iron Man</title>
@@ -69,6 +71,10 @@
                     <span>STARK</span>
                 </div>
                 <img src="../img/nightclub.png" alt="Tony Stark">
+
+                <div class="intro__bg">
+
+                </div>
             </div>
             <h1>
                 IRON MAN
@@ -103,8 +109,8 @@
                 <div>Black</div>
             </li>
         </ul>
-        <article>
-            <div class="about__left">
+        <article class="about-article">
+            <div>
                 <div class="note">
                     <h2>Heart of Steel</h2>
                     <p>
@@ -113,29 +119,25 @@
                     </p>
                 </div>
             </div>
-            <div class="about__right">
+            <div>
                 <img src="../img/stark-front.png" alt="">
             </div>
         </article>
-        <article>
-            <div class="about__left">
-                <div class="note">
-                    <h2>The Forge of Adventure</h2>
+        <article class="about-article">
+            <div class="clip-right">
+                <img class="scale-in" src="../img/thanos.jpeg" alt="">
+            </div>
+            <div>
+                <div class="note note--right">
+                    <h2>The Adventure</h2>
                     <p>
                         Sometime later, Stark answered a summons from Doctor Strange and Bruce Banner, learning of Thanos’ intention to acquire both of the Infinity Stones known to be on Earth. Iron Man fought valiantly when Thanos’ followers attacked New York and managed to get onboard their ship as it left the planet following the assault. The craft made its way to the tyrant’s home world Titan where Stark, Doctor Strange, and Spider-Man made a stand alongside Guardians of the Galaxy members Star-Lord, Drax, and Mantis to stop Thanos once and for all—eventually joined in their fight by Thanos’ adoptive daughter, Nebula.
                         The attempt failed. During the battle Iron Man was badly injured by Thanos and would have lost his life, if not for the intervention of Strange, who gave up the Infinity Stone he had in his possession in order to convince Thanos to spare Stark. The exchange made, Thanos left Titan for Earth, where he was able to gain control of the final Infinity Stone. Having done so, he used the full power of the Infinity Gauntlet to end half of all life in the universe. On Titan, Star-Lord, Drax, Mantis, Doctor Strange, and Spider-Man all disintegrated away, leaving the despairing Iron Man and Nebula alone on the planet.
                     </p>
                 </div>
             </div>
-            <div class="about__right">
-                <img src="../img/thanos.jpeg" alt="">
-            </div>
         </article>
     </section>
-    <section class="quote" data-section="about">
-        <blockquote>“YOU CAN TAKE AWAY MY HOUSE, ALL MY TRICKS AND TOYS. ONE THING YOU CAN'T TAKE AWAY...I AM IRON MAN."</blockquote>
-    </section>
-
     <section class="armor" data-section="suits">
         <h2>SUITS</h2>
         <div class="table">
@@ -217,7 +219,9 @@
             </div>
         </div>
     </section>
-
+    <section class="quote" data-section="suits">
+        <blockquote>“YOU CAN TAKE AWAY MY HOUSE, ALL MY TRICKS AND TOYS. ONE THING YOU CAN'T TAKE AWAY...I AM IRON MAN."</blockquote>
+    </section>
     <section class="armor users" data-section="users">
         <h2>USERS</h2>
         <div class="table">
@@ -252,9 +256,21 @@
             </div>
         </div>
     </section>
-
+    <section class="quote quote--bottom" data-section="users">
+        
+    </section>
     <footer>
-        <span>ITMO HEHE</span>
+        <div class="footer-section">
+            <span class="footer__logotype">ITMO HEHE</span>
+        </div>
+        <div class="footer-section">
+            <div class="footer-section__name">Address</div>
+            <div class="footer-section-item">
+                <span>North America</span>
+                <span>New York City, Manhattan</span>
+                <span>200 Park Avenue</span>
+            </div>
+        </div>
     </footer>
 
     <script src="./js/header.js"></script>

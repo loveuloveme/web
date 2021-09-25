@@ -9,12 +9,6 @@
     flex-wrap: wrap;
     background-position: center;
     background-size: cover;
-
-    /* border: 2px solid var(--marvel-red); */
-
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
 }
 
 .quote blockquote{
@@ -23,4 +17,10 @@
     width: 60%;
     font-weight: bold;
     text-align: center;
+}
+
+.quote--bottom{
+    min-height: 400px;
+    background-position-y: top;
+    background-image: url('../../../img/iron-man-bottom.jpg');
 }
