@@ -45,6 +45,8 @@ window.addEventListener('load', () => {
         })
     });
 
+    new simpleParallax(document.querySelectorAll('.quote img'));
+
     elementEnter(document.querySelector(".quote"), {}, () => {});
     elementEnter(document.querySelector(".users"), {}, () => {
         setTimeout(loadUsers, 1500);

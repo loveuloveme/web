@@ -47,7 +47,7 @@ window.addEventListener('load', () => {
         })
         .to(document.querySelector('.intro__bg'), {
             transform: 'scale(1.8)',
-            delay: 0,
+            delay: -0.7,
             duration: 0.7,
             ease: animEase
         })
