@@ -1,18 +1,6 @@
 window.addEventListener('load', () => {
-
-    // document.querySelectorAll('section').forEach(section => {
-    //     elementEnter(section, () => {
-    //         let name = section.dataset.section;
-
-    //         console.log(name);
-            // document.querySelectorAll('header ul > li').forEach(li => {
-            //     li.classList.remove(`active`);
-            // });
-
-    //         let liNode = document.querySelector(`header ul > li[data-section="${name}"]`);
-    //         liNode.classList.add(`active`);
-    //     },  [0, 0.25, 0.5, 0.75, 1]);
-    // });
+    
+    fadeOut(document.querySelector('.page-loader'))
 
     window.addEventListener('scroll', () => {
         let sections = document.querySelectorAll('section');

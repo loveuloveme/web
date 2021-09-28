@@ -11,6 +11,11 @@ window.addEventListener('load', () => {
         timeline
         .set(document.querySelectorAll('.intro > video')[0], {
             clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%)',
+            transform: 'scale(1)'
+        })
+        .set(document.querySelectorAll('.intro > video')[0], {
+            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%)',
+            transform: 'scale(1)'
         })
         .set(document.querySelectorAll('.intro > video')[1], {
             clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%)',
@@ -22,7 +27,8 @@ window.addEventListener('load', () => {
             clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%, 0% 0%)',
             delay,
             duration: 0.5,
-            ease: animEase
+            ease: animEase,
+            transform: 'scale(2)'
         })
         .to(document.querySelectorAll('.intro > video')[1], {
             clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%, 0% 0%)',
@@ -34,14 +40,14 @@ window.addEventListener('load', () => {
             }
         })
         .to(document.querySelectorAll('.intro > video')[0], {
-            clipPath: 'polygon(0% 0%, 99% 0%, 99% 100%, 0% 100%, 0% 0%)',
-            delay,
+            clipPath: 'polygon(1% 0%, 100% 0%, 100% 100%, 1% 100%, 1% 0%)',
+            delay: -0.3,
             duration: 0.01,
             ease: animEase
         })
         .to(document.querySelectorAll('.intro > video')[0], {
-            clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%, 0% 0%)',
-            delay,
+            clipPath: 'polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 0%)',
+            delay: -0.3,
             duration: 0.7,
             ease: animEase
         })
@@ -54,8 +60,8 @@ window.addEventListener('load', () => {
         .to(document.querySelector('.intro__bg'), {
             transform: 'scale(1)',
             delay: 0,
-            duration: 30,
-            ease: animEase
+            duration: 100,
+            ease: 'Linear.none'
         })
         
         timeline.play();
