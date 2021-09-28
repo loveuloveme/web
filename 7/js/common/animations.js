@@ -38,6 +38,6 @@ window.addEventListener('load', () => {
 
         elementEnter(document.querySelector('.scale-in'), {repeat: false}, () => {
             scaleIn(element);
-        }, 0.5);
+        }, 0.3);
     });
 })

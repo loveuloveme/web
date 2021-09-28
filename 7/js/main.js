@@ -38,5 +38,5 @@ window.addEventListener('load', () => {
     elementEnter(document.querySelector(".quote"), {}, () => {});
     elementEnter(document.querySelector(".users"), {}, () => {
         setTimeout(loadUsers, 1500);
-    });
+    }, 0.3);
 });

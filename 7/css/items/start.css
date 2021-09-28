@@ -1,7 +1,6 @@
 
 .start{
-    padding: 201px 40px 0 40px;
-
+    padding: 98px 40px 0 40px;
     justify-content: center;
 
     /* background: url(https://www.hollywoodreporter.com/wp-content/uploads/2013/05/bmk1750_v118.1082.jpg?w=1024); */
@@ -59,11 +58,6 @@ main{
     background-position: center top;
 }
 
-.clip-right{
-    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%, 0% 0%);
-    margin-left: -40px;
-}
-
 main h1{
     position: absolute;
     z-index: 1;
@@ -108,12 +102,13 @@ main h1{
     position: absolute;
 
     left: 50%;
+    top: 50%;
+
+    transform: translate(-100%, -50%);
 }
 
 .intro__name span:nth-child(1){
     z-index: 4;
-
-    transform: translateX(-100%);
 
     left: calc(50% - 25px);
 }
@@ -121,6 +116,7 @@ main h1{
 .intro__name span:nth-child(2){
     z-index: 6;
     left: calc(50% + 25px);
+    transform: translate(0%, -50%);
 }
 
 .intro blockquote{

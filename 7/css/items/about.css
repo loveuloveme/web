@@ -118,7 +118,7 @@
 .about-article{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(500px, auto);
+    grid-auto-rows: minmax(auto, auto);
 }
 
 .about-article > div{
@@ -126,6 +126,8 @@
     align-items: center;
     justify-content: center;
     max-height: 1000px;
+
+    overflow: hidden;
 }
 
 .about-article div:nth-child(1){
@@ -147,16 +149,43 @@
     object-fit: cover;
 }
 
+
+.clip-right{
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%, 0% 0%);   
+}
+
+
 @media (max-width: 1200px) {
 
 }
 
 @media (max-width: 992px) {
-
+    .note{
+        border: none;
+    }
 }
 
 @media (max-width: 768px) {
     .about-article{
         grid-template-columns: 1fr;
+    }
+
+    
+
+    .about-article > div{
+        margin-top: 15px;
+    }
+    
+
+    .clip-right{
+        clip-path: none;
+    }
+
+    .about-article[data-theme="heart"]  > div:nth-child(2){
+        display: none;
+    }
+
+    .about-article[data-theme="adventure"]  > div:nth-child(1){
+        height: 200px;
     }
 }
