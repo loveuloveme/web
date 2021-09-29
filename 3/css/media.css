@@ -238,4 +238,8 @@
     .table-item{
         font-size: 1.1rem;
     }
+
+    .table-item span{
+        font-size: 1.1rem;
+    }
 }

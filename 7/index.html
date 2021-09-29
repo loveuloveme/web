@@ -21,10 +21,17 @@
     <link rel="stylesheet" href="css/items/about.css">
     <link rel="stylesheet" href="css/items/quote.css">
     <link rel="stylesheet" href="css/items/armor.css">
+    <link rel="stylesheet" href="css/items/photos.css">
     <link rel="stylesheet" href="css/items/footer.css">
 
     <link rel="stylesheet" href="css/media.css">
 
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -40,25 +47,22 @@
 </head>
 <body>
     <div class="loader page-loader">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-            <g>
-                <path fill="#DD0303" d="M352.105,181.77l-3.667-60.322c-27.185-31.068-59.872-41.392-83.356-44.467l0.012-0.367
-                    c0,0-5.955-0.953-15.594-0.791c-9.639-0.163-15.593,0.791-15.593,0.791l0.011,0.367c-23.484,3.076-56.172,13.399-83.355,44.467
-                    l-3.668,60.322c0,0-13.858,13.043-11.82,39.128c2.038,26.086,13.45,45.242,13.45,45.242l-1.36,8.424l6.251,16.574l2.988,59.236
-                    l1.358,10.326l43.477,56.246l42.986,6.029l0.008,0.221h1.569h7.396h1.569l0.008-0.221l42.986-6.029l43.477-56.246l1.358-10.326
-                    l2.988-59.236l6.251-16.574l-1.36-8.424c0,0,11.412-19.156,13.45-45.242C365.964,194.813,352.105,181.77,352.105,181.77z"/>
-                <path fill="#FFD400" d="M336.315,249.836l3.261-103.526c-27.444-21.738-51.626-20.651-51.626-20.651l-10.327,85.321l-28.123,5.175
-                    l-28.124-5.175l-10.325-85.321c0,0-24.183-1.087-51.627,20.651l3.26,103.526L151,274.835l58.149,100.809l7.066-7.064h25.269h16.033
-                    h25.27l7.064,7.064L348,274.835L336.315,249.836z"/>
-                <g>
-                    <polygon fill="#FFFFFF" points="329.014,249.836 276.435,274.495 275.008,279.386 281.121,288.761 318.823,279.794 
-                        331.052,262.269 		"/>
-                    <polygon fill="#FFFFFF" points="169.987,249.836 167.949,262.269 180.177,279.794 217.878,288.761 223.992,279.386 
-                        222.565,274.495 		"/>
+        <svg version="1.0" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <g id="g14" transform="translate(11.764706,-14.117647)">
+                <path
+                    id="path4"
+                    d="M 221.72266 111.53711 C 216.71867 111.62625 195.20295 113.17066 171.18945 132.19141 L 174.44922 235.71875 L 162.76562 260.7168 L 220.91406 361.52539 L 227.98047 354.46289 L 253.24805 354.46289 L 269.28125 354.46289 L 294.55078 354.46289 L 301.61523 361.52539 L 359.76562 260.7168 L 348.08008 235.71875 L 351.33984 132.19141 C 323.89584 110.45341 299.71484 111.54102 299.71484 111.54102 L 289.38867 196.86328 L 261.26562 202.03711 L 233.14062 196.86328 L 222.81641 111.54102 C 222.81641 111.54102 222.43751 111.52438 221.72266 111.53711 z M 181.75195 235.71875 L 234.33008 260.37695 L 235.75586 265.26758 L 229.64258 274.64258 L 191.94141 265.67578 L 179.71289 248.15039 L 181.75195 235.71875 z M 340.7793 235.71875 L 342.81641 248.15039 L 330.58789 265.67578 L 292.88477 274.64258 L 286.77344 265.26758 L 288.19922 260.37695 L 340.7793 235.71875 z "
+                    transform="translate(-11.764706,14.117647)"
+                    style="fill:#ffd400;fill-opacity:1"
+                />
+                <g id="g10">
+                    
+                    
                 </g>
-                <polygon fill="#FFD400" points="304.593,361.786 290.189,381.62 281.156,372.587 257.041,372.587 241.959,372.587 217.844,372.587 
-                    208.81,381.62 194.407,361.786 191.962,374.829 204.734,399.147 218.185,394.731 239.038,394.731 242.774,390.995 256.226,390.995 
-                    259.962,394.731 280.815,394.731 294.266,399.147 307.037,374.829 	"/>
+                <polygon
+                fill="#ffd400"
+                points="290.189,381.62 281.156,372.587 257.041,372.587 241.959,372.587 217.844,372.587 208.81,381.62 194.407,361.786 191.962,374.829 204.734,399.147 218.185,394.731 239.038,394.731 242.774,390.995 256.226,390.995 259.962,394.731 280.815,394.731 294.266,399.147 307.037,374.829 304.593,361.786 "
+                id="polygon12" />
             </g>
         </svg>
     </div>
@@ -69,6 +73,7 @@
                 <li data-section="start">start</li>
                 <li data-section="about">about</li>
                 <li data-section="suits">suits</li>
+                <li data-section="photos">photos</li>
                 <li data-section="users">users</li>
             </ul>
         </nav>
@@ -82,6 +87,7 @@
                 <li data-section="start">start</li>
                 <li data-section="about">about</li>
                 <li data-section="suits">suits</li>
+                <li data-section="photos">photos</li>
                 <li data-section="users">users</li>
             </ul>
         </nav>
@@ -90,7 +96,7 @@
         <main>
             <div class="intro">
                 <video src="../video/suitup.webm" muted></video>
-                <video src="../video/header.mp4" autoplay muted></video>
+                <video src="../video/header.mp4" muted></video>
                 
                 <div class="intro__name">
                     <span>TONY</span>
@@ -248,6 +254,22 @@
     <section class="quote" data-section="suits">
         <blockquote>“YOU CAN TAKE AWAY MY HOUSE, ALL MY TRICKS AND TOYS. ONE THING YOU CAN'T TAKE AWAY...I AM IRON MAN."</blockquote>
     </section>
+    <section class="photos" data-section="photos">
+        <h2>photos</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/photos/1.jpg" alt="photo"></div>
+                <div class="swiper-slide"><img src="../img/photos/2.jpg" alt="photo"></div>
+                <div class="swiper-slide"><img src="../img/photos/3.jpg" alt="photo"></div>
+                <div class="swiper-slide"><img src="../img/photos/4.jpg" alt="photo"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
     <section class="armor users" data-section="users">
         <h2>USERS</h2>
         <div class="table">
@@ -258,25 +280,22 @@
                 <div class="table-item">COMPANY</div>
             </div>            
             <div class="loader preloader">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-                    <g>
-                        <path fill="#DD0303" d="M352.105,181.77l-3.667-60.322c-27.185-31.068-59.872-41.392-83.356-44.467l0.012-0.367
-                            c0,0-5.955-0.953-15.594-0.791c-9.639-0.163-15.593,0.791-15.593,0.791l0.011,0.367c-23.484,3.076-56.172,13.399-83.355,44.467
-                            l-3.668,60.322c0,0-13.858,13.043-11.82,39.128c2.038,26.086,13.45,45.242,13.45,45.242l-1.36,8.424l6.251,16.574l2.988,59.236
-                            l1.358,10.326l43.477,56.246l42.986,6.029l0.008,0.221h1.569h7.396h1.569l0.008-0.221l42.986-6.029l43.477-56.246l1.358-10.326
-                            l2.988-59.236l6.251-16.574l-1.36-8.424c0,0,11.412-19.156,13.45-45.242C365.964,194.813,352.105,181.77,352.105,181.77z"/>
-                        <path fill="#FFD400" d="M336.315,249.836l3.261-103.526c-27.444-21.738-51.626-20.651-51.626-20.651l-10.327,85.321l-28.123,5.175
-                            l-28.124-5.175l-10.325-85.321c0,0-24.183-1.087-51.627,20.651l3.26,103.526L151,274.835l58.149,100.809l7.066-7.064h25.269h16.033
-                            h25.27l7.064,7.064L348,274.835L336.315,249.836z"/>
-                        <g>
-                            <polygon fill="#FFFFFF" points="329.014,249.836 276.435,274.495 275.008,279.386 281.121,288.761 318.823,279.794 
-                                331.052,262.269 		"/>
-                            <polygon fill="#FFFFFF" points="169.987,249.836 167.949,262.269 180.177,279.794 217.878,288.761 223.992,279.386 
-                                222.565,274.495 		"/>
+                <svg version="1.0" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <g id="g14" transform="translate(11.764706,-14.117647)">
+                        <path
+                            id="path4"
+                            d="M 221.72266 111.53711 C 216.71867 111.62625 195.20295 113.17066 171.18945 132.19141 L 174.44922 235.71875 L 162.76562 260.7168 L 220.91406 361.52539 L 227.98047 354.46289 L 253.24805 354.46289 L 269.28125 354.46289 L 294.55078 354.46289 L 301.61523 361.52539 L 359.76562 260.7168 L 348.08008 235.71875 L 351.33984 132.19141 C 323.89584 110.45341 299.71484 111.54102 299.71484 111.54102 L 289.38867 196.86328 L 261.26562 202.03711 L 233.14062 196.86328 L 222.81641 111.54102 C 222.81641 111.54102 222.43751 111.52438 221.72266 111.53711 z M 181.75195 235.71875 L 234.33008 260.37695 L 235.75586 265.26758 L 229.64258 274.64258 L 191.94141 265.67578 L 179.71289 248.15039 L 181.75195 235.71875 z M 340.7793 235.71875 L 342.81641 248.15039 L 330.58789 265.67578 L 292.88477 274.64258 L 286.77344 265.26758 L 288.19922 260.37695 L 340.7793 235.71875 z "
+                            transform="translate(-11.764706,14.117647)"
+                            style="fill:#ffd400;fill-opacity:1"
+                        />
+                        <g id="g10">
+                            
+                            
                         </g>
-                        <polygon fill="#FFD400" points="304.593,361.786 290.189,381.62 281.156,372.587 257.041,372.587 241.959,372.587 217.844,372.587 
-                            208.81,381.62 194.407,361.786 191.962,374.829 204.734,399.147 218.185,394.731 239.038,394.731 242.774,390.995 256.226,390.995 
-                            259.962,394.731 280.815,394.731 294.266,399.147 307.037,374.829 	"/>
+                        <polygon
+                        fill="#ffd400"
+                        points="290.189,381.62 281.156,372.587 257.041,372.587 241.959,372.587 217.844,372.587 208.81,381.62 194.407,361.786 191.962,374.829 204.734,399.147 218.185,394.731 239.038,394.731 242.774,390.995 256.226,390.995 259.962,394.731 280.815,394.731 294.266,399.147 307.037,374.829 304.593,361.786 "
+                        id="polygon12" />
                     </g>
                 </svg>
             </div>

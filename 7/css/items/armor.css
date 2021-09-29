@@ -107,3 +107,25 @@
         font-size: 1.1rem;
     }
 }
+
+@media (max-width: 576px) {
+    .armor h2{
+        align-self: auto;
+    }
+
+    .quote blockquote{
+        width: 95%;
+    }
+
+    .armor{
+        padding: 0 !important;
+    }
+
+    .table{
+        width: 100%;
+    }
+
+    .table-item{
+        font-size: 1.1rem;
+    }
+}

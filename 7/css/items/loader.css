@@ -10,24 +10,22 @@
     justify-content: center;
 }
 
-.loader path:nth-child(1){
-    fill: #dc2d2d;
+.loader path, .loader polygon{
+
 }
 
-.loader polygon:nth-child(1), .loader polygon:nth-child(2){
-    animation: 3s infinite loader-eyes linear;
+.loader > svg > g{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke: #000;
+    stroke-width: 7px;
+
+    animation: infinite dash 10s linear;
 }
 
-@keyframes loader-eyes{
-    0%{
-        fill: rgb(172, 172, 172);
-    }
 
-    50%{
-        fill:#000;
-    }
-
-    100%{
-        fill: rgb(172, 172, 172);
+@keyframes dash {
+    to{
+      stroke-dashoffset: 0;
     }
 }

@@ -60,3 +60,18 @@ body{
 
     height: 100px;
 }
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    h2{
+        line-height: 4.9rem;
+    }
+}

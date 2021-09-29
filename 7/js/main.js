@@ -1,7 +1,23 @@
 window.addEventListener('load', () => {
-    
-    fadeOut(document.querySelector('.page-loader'))
+    fadeOut(document.querySelector('.page-loader'));
 
+    var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    
     window.addEventListener('scroll', () => {
         let sections = document.querySelectorAll('section');
 
