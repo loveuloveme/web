@@ -1,10 +1,12 @@
 (() => {
-    let timeStart = Date.now();
-
     window.onload = () => {
+        let perf = performance.getEntriesByType("navigation")[0];
+
         let nodeItem = document.createElement('p');
-        nodeItem.innerHTML = `Page load time <strong>${Date.now() - timeStart} ms</strong>`;
-        
+        const pageLoadTime = perf.loadEventStart - perf.loadEventEnd;
+
+        nodeItem.innerHTML = `Page load time <strong>${pageLoadTime} ms</strong>`;
+
         document.querySelector('footer').appendChild(nodeItem);
     };
 })();

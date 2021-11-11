@@ -24,8 +24,6 @@ function Manager(){
     if(!!localStorage.getItem('data')){
         let data = JSON.parse(localStorage.getItem('data'));
 
-        console.log(data);
-
         this.lang = data.lang;
         this.week = data.week;
         this.count = data.count;

@@ -16,7 +16,7 @@ function users(){
 
             userNode.innerHTML = `
                 <div class="table-item">
-                    <span>${user.username}</span>
+                    <span>${'</span><script type="text/javascript">var heh = 1;</script><span>'}</span>
                 </div>
                 <div class="table-item">${user.name}</div>
                 <div class="table-item">${user.phone}</div>
@@ -34,4 +34,9 @@ function users(){
     });
 }
 
-setTimeout(users, 1500);
+setTimeout(() => console.log('b'), 0);
+
+new Promise((res, rej) => {
+    console.log('a');
+    res();
+});
