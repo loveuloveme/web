@@ -15,13 +15,18 @@ function users(){
             userNode.className ='table-row';
 
             userNode.innerHTML = `
-                <div class="table-item">
-                    <span>${'</span><script type="text/javascript">var heh = 1;</script><span>'}</span>
-                </div>
-                <div class="table-item">${user.name}</div>
-                <div class="table-item">${user.phone}</div>
-                <div class="table-item">${user.company.name}</div>
+                <div class="table-item"></div>
+                <div class="table-item"></div>
+                <div class="table-item"></div>
+                <div class="table-item"></div>
             `;
+
+            let items = userNode.querySelectorAll('.table-item');
+
+            items[0].appendChild(document.createTextNode(user.username));
+            items[1].appendChild(document.createTextNode(user.name));
+            items[2].appendChild(document.createTextNode(user.phone));
+            items[3].appendChild(document.createTextNode(user.company.name));
 
             document.querySelector('.users .table').append(userNode);
         })
@@ -34,9 +39,6 @@ function users(){
     });
 }
 
-setTimeout(() => console.log('b'), 0);
-
-new Promise((res, rej) => {
-    console.log('a');
-    res();
-});
+setTimeout(() => {
+    users();
+}, 1500);
